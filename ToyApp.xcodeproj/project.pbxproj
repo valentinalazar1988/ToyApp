@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		84CC499827258DC300FEEC8F /* MyProrotypeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC499627258DC300FEEC8F /* MyProrotypeCellTableViewCell.swift */; };
 		84CC499927258DC300FEEC8F /* MyProrotypeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CC499727258DC300FEEC8F /* MyProrotypeCellTableViewCell.xib */; };
 		84CC499C27258F9500FEEC8F /* RepoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC499B27258F9500FEEC8F /* RepoController.swift */; };
+		84CC499F2726DC0A00FEEC8F /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 84CC499E2726DC0A00FEEC8F /* OAuth2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CC499F2726DC0A00FEEC8F /* OAuth2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,9 @@
 			dependencies = (
 			);
 			name = ToyApp;
+			packageProductDependencies = (
+				84CC499E2726DC0A00FEEC8F /* OAuth2 */,
+			);
 			productName = ToyApp;
 			productReference = 842CA7402722F88D00966AAB /* ToyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 842CA7372722F88C00966AAB;
+			packageReferences = (
+				84CC499D2726DC0A00FEEC8F /* XCRemoteSwiftPackageReference "OAuth2" */,
+			);
 			productRefGroup = 842CA7412722F88D00966AAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -355,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84CC499D2726DC0A00FEEC8F /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84CC499E2726DC0A00FEEC8F /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84CC499D2726DC0A00FEEC8F /* XCRemoteSwiftPackageReference "OAuth2" */;
+			productName = OAuth2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 842CA7382722F88C00966AAB /* Project object */;
 }
